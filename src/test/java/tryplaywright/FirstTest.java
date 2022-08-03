@@ -29,7 +29,7 @@ public class FirstTest extends BaseTest {
     @BeforeEach
     void createContextAndPage() {
         context = browser.newContext(new Browser.NewContextOptions()
-                .setRecordVideoDir(Paths.get("/home/user/projects/other/playwright/"))
+                .setRecordVideoDir(Paths.get("./video/"))
                 .setRecordVideoSize(640, 480));
         page = context.newPage();
     }
